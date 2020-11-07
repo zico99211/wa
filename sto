@@ -1,0 +1,4 @@
+def execute(filters=None):
+	from erpnext.stock.report.stock_balance.stock_balance import execute
+	columns, data = execute(filters)
+	return _get_columns(columns), _get_data(data)
